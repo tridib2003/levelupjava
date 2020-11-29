@@ -1,0 +1,12 @@
+body {
+    font-family: monospace;
+}
+
+.h1-basic {
+    text-align: center;
+}
+
+.quotes {
+    text-align: center; 
+    font-family:cursive;
+}
