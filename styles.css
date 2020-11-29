@@ -17,8 +17,17 @@ body {
 
 .description-std {
     padding: 1rem 1rem;
-    border-left: 5px solid var(--primary-color);
-    background-color: floralwhite;
+    /* border-left: 5px solid var(--primary-color); */
+    background-color: aliceblue;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+}
+
+.syntax-std {
+    padding: 1rem 1rem;
+    border-left: 6px solid rgb(220, 153, 251);
+    background-color: rgb(246, 227, 255);
+    border-radius: 12px;
 }
 
 .quotes {
