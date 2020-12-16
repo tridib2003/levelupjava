@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 :root {
     --primary-color: #14B8A6;
 }
 body {
-    font-family: monospace;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .h1-basic {
+    font-family: 'Itim', cursive;
     color: var(--primary-color);
     text-align: center;
 }
@@ -13,6 +20,40 @@ body {
 .h2-basic {
     color: var(--primary-color);
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ul-remove-bullet {
+    list-style: none;
+}
+
+.index-std {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: x-large;
+}
+
+.index-pills {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: mediumseagreen;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+  }
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+  
+.container-center {
+    max-width: 300px;
+    margin: auto;
 }
 
 .description-std {
@@ -31,6 +72,9 @@ body {
 }
 
 .quotes {
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center; 
-    font-family:cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
 }
