@@ -3,25 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 :root {
-    --primary-color: #14B8A6;
+    --surface-color: #121212;
+    --primary-header-color: teal;
+    --secondary-header-color: rgb(0, 155, 155);
 }
 body {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* background: whitesmoke; */
     font-family: 'Quicksand', sans-serif;
+    background-image: url('/assets/images/LUJ-BG.png');
+    margin: 0px;
 }
 
 .h1-basic {
+    color: var(--primary-header-color);
     font-family: 'Itim', cursive;
-    color: var(--primary-color);
     text-align: center;
 }
 
 .h2-basic {
-    color: var(--primary-color);
+    color: var(--secondary-header-color);
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .ul-remove-bullet {
@@ -40,7 +41,7 @@ body {
 }
 
 .link-primary {
-    background-color: mediumseagreen;
+    background-color: tomato;
     border-radius: 2rem;
     color: rgb(255, 255, 255);
     padding: 1rem;
@@ -73,6 +74,7 @@ body {
 }
 
 .quotes {
+    color: 
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center; 
@@ -84,4 +86,15 @@ body {
     width: 100%;
     max-width: 500px;
     height: auto;
+}
+
+/** nav bar **/
+
+.nav-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.navigation-std {
+    background-color: var(--primary-header-color);
 }
