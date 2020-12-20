@@ -204,6 +204,9 @@ body {
 /********** footer **********/
 
 .footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
     background-color: var(--primary-header-color);
     padding: 1rem 1rem;
     text-align: center;
