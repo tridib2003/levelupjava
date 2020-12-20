@@ -1,12 +1,24 @@
+/********** imports **********/
+
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+/*************************/
+
+/********** root **********/
+
 :root {
     --surface-color: #121212;
+    --secondary-surface-color: rgb(235, 235, 235) ;
     --primary-header-color: teal;
     --secondary-header-color: rgb(0, 155, 155);
+    --primary-typo-color: #606060;
 }
+
+/*************************/
+
+/********** body **********/
 
 body {
     /* background: whitesmoke; */
@@ -14,6 +26,10 @@ body {
     background-image: url('/assets/images/LUJ-BG.png');
     margin: 0px;
 }
+
+/*************************/
+
+/********** headings **********/
 
 .h1-basic {
     color: var(--primary-header-color);
@@ -26,7 +42,9 @@ body {
     text-align: center;
 }
 
-/** Lists **/
+/*************************/
+
+/********** lists **********/
 
 .ul-remove-bullet {
     list-style: none;
@@ -37,7 +55,9 @@ body {
     padding: 1rem 3rem;
 }
 
-/*********************/
+/*************************/
+
+/********** index **********/
 
 .index-std {
     text-align: center;
@@ -50,7 +70,9 @@ body {
     padding: 0.5rem 1rem;
 }
 
-/** Link **/
+/*************************/
+
+/********** link **********/
 
 .link {
     text-decoration: none;
@@ -66,6 +88,8 @@ body {
 
 /*************************/
 
+/********** container **********/
+
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -76,21 +100,52 @@ body {
     margin: auto;
 }
 
-.description-std {
-    color: slategray;
-    background-color: rgb(240, 255, 224);
-    padding: 0.5rem 0.5rem;
-    /* border: 2px solid var(--primary-color); */
-    /* border-left: 5px solid var(--primary-color); */
-    border-radius: 15px;
+/*************************/
+
+/********** description **********/
+
+.desc-std {
+    color: var(--primary-typo-color);
+    /* background-color: rgb(230, 255, 255);
+    border: 2px solid var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 15px; */
 }
+
+.desc-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.desc-container-center {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*************************/
+
+/********** syntax **********/
 
 .syntax-std {
     padding: 0.5rem 1rem;
-    border-left: 6px solid rgb(220, 153, 251);
-    background-color: rgb(249, 239, 253);
-    border-radius: 15px;
+    border-left: 6px solid teal;
+    background-color: var(--secondary-surface-color);
+    border-radius: 2rem;
 }
+
+.syntax-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.syntax-container-center {
+    max-width: 500px;
+    margin: auto;
+}
+
+/*************************/
+
+/********** quotes **********/
 
 .quotes {
     color: black;
@@ -101,13 +156,19 @@ body {
     font-size: larger;
 }
 
+/*************************/
+
+/********** images **********/
+
 .img-responsive {
     width: 100%;
     max-width: 500px;
     height: auto;
 }
 
-/** nav bar **/
+/*************************/
+
+/********** nav bar **********/
 
 .navigation-std {
     padding: 0.1rem;
@@ -138,9 +199,9 @@ body {
     margin: 0.5rem 0.5rem;
 }
 
-/****************************/
+/*************************/
 
-/** footer **/
+/********** footer **********/
 
 .footer {
     background-color: var(--primary-header-color);
@@ -172,3 +233,5 @@ body {
     border-radius: 2rem;
     padding: 0.2rem;
   }
+
+  /*************************/
