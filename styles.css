@@ -7,6 +7,7 @@
     --primary-header-color: teal;
     --secondary-header-color: rgb(0, 155, 155);
 }
+
 body {
     /* background: whitesmoke; */
     font-family: 'Quicksand', sans-serif;
@@ -25,9 +26,18 @@ body {
     text-align: center;
 }
 
+/** Lists **/
+
 .ul-remove-bullet {
     list-style: none;
 }
+
+.ul-inline-item {
+    display: inline;
+    padding: 1rem 3rem;
+}
+
+/*********************/
 
 .index-std {
     text-align: center;
@@ -40,18 +50,27 @@ body {
     padding: 0.5rem 1rem;
 }
 
+/** Link **/
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+  }
+
 .link-primary {
     background-color: tomato;
     border-radius: 2rem;
     color: rgb(255, 255, 255);
     padding: 1rem;
-  }
+}
+
+/*************************/
 
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-  
+
 .container-center {
     max-width: 300px;
     margin: auto;
@@ -74,10 +93,10 @@ body {
 }
 
 .quotes {
-    color: 
+    color: black;
     padding-left: 2rem;
     padding-right: 2rem;
-    text-align: center; 
+    text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: larger;
 }
@@ -91,10 +110,36 @@ body {
 /** nav bar **/
 
 .nav-container {
-    padding-left: 0rem;
-    padding-right: 0rem;
+    /* padding: 0.5rem; */
 }
 
 .navigation-std {
+    padding: 0.1rem;
     background-color: var(--primary-header-color);
 }
+
+.navigation-std .nav-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navigation-std .nav-pills {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.navigation-std .link {
+    color: white;
+}
+
+.navigation-std .nav-pills-decor {
+    color: white;
+    border: solid; 
+    border-width: 0.1rem; 
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 2rem 2rem;
+}
+
+/****************************/

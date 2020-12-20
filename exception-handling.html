@@ -10,23 +10,24 @@
 
 <body>
 
-    <nav style="border-radius: 0%;" class="navigation-std nav-container">
-        <!-- <div class="nav-title">PROJECTS</div> -->
-        <ul style="text-align: center; padding: 1rem;" class="ul-remove-bullet nav-pills">
-            <li class="ul-inline-item">
+    <nav class="navigation-std">
+
+        <ul class="ul-remove-bullet nav-pills">
+
+            <li class="ul-inline-item nav-pills-decor"> 
+                <a class="link" href="/">Previous</a>
+            </li>
+            
+            <li class="ul-inline-item nav-pills-decor">
                 <a class="link" href="/">Home</a>
             </li>
-            <li class="ul-inline-item">
-                <a class="link" href="/projects.html">Projects</a>
+            
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Next</a>
             </li>
-            <li style="border: solid; border-width: 0.1rem; border-radius: 1rem; padding: 0.2rem;"
-                class="ul-inline-item">
-                <a class="link current-select" href="/about.html">About Me</a>
-            </li>
-            <!-- <li class="ul-inline-item">
-                <a class="link" href="/interests">Interests</a>
-            </li> -->
+
         </ul>
+
     </nav>
 
     <h1 style="color: olivedrab;" class="h1-basic">Exception Handling</h1>
@@ -57,25 +58,30 @@
                     <li>
                         <p>
                             <strong>catch</strong> - this block will execute if an exception has occured in the
-                            <i>try</i> block and perform necesssary steps, hence preventing abnormal termination of the
+                            <i>try</i> block and perform necesssary steps, hence preventing abnormal termination of
+                            the
                             program.
                         </p>
                     </li>
                     <li>
                         <p>
-                            <strong>throw</strong> - to manually throw an exception the <i>throw</i> keyword is used.
-                            Although system-generated exceptions are automatically thrown by the Java run-time system.
+                            <strong>throw</strong> - to manually throw an exception the <i>throw</i> keyword is
+                            used.
+                            Although system-generated exceptions are automatically thrown by the Java run-time
+                            system.
                         </p>
                     </li>
                     <li>
                         <p>
-                            <strong>throws</strong> - any exception which is thrown out of a method must be specified by
+                            <strong>throws</strong> - any exception which is thrown out of a method must be
+                            specified by
                             a <i>throws</i> clause.
                         </p>
                     </li>
                     <li>
                         <p>
-                            <strong>finally</strong> - set of statements which must be executed after <i>try</i> block
+                            <strong>finally</strong> - set of statements which must be executed after <i>try</i>
+                            block
                             completes must be put inside the <i>finally</i> block.
                         </p>
                     </li>
@@ -85,10 +91,12 @@
             <li>
                 <p>
                     The <strong>Throwable</strong> class is at the top of the exception class hierarchy. All exception
-                    types are subclasses of the built-in class <i>Throwable</i>. There are two sub-classes of <i>Throwable</i> named <strong>Error</strong> and <strong>Exception</strong>.
+                    types are subclasses of the built-in class <i>Throwable</i>. There are two sub-classes of
+                    <i>Throwable</i> named <strong>Error</strong> and <strong>Exception</strong>.
                 </p>
                 <p title="Throwable class hierarchy" style="text-align:center">
-                    <img src="assets\images\LUJ-EH-01.png" alt="Throwable class hierarchy" width=500 class="img-responsive" />
+                    <img src="assets\images\LUJ-EH-01.png" alt="Throwable class hierarchy" width=500
+                        class="img-responsive" />
                 </p>
             </li>
         </ul>
@@ -99,22 +107,22 @@
     <div class="syntax-std">
         <p>General syntax of an exception-handling block: </p>
         <xmp>
-        try {
+            try {
             // block of code to monitor for errors
-        }
+            }
 
-        catch (ExceptionType1 exOb){
+            catch (ExceptionType1 exOb){
             // exception handler for Exception Type 1
-        }
+            }
 
-        catch (ExceptionType2 exOb){
+            catch (ExceptionType2 exOb){
             // exception handler for Exception Type 2
-        }
-        // ... 
+            }
+            // ...
 
-        finally {
+            finally {
             // block of code to be executed after try block ends
-        }
+            }
         </xmp>
     </div>
 
