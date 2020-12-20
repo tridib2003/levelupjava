@@ -109,10 +109,6 @@ body {
 
 /** nav bar **/
 
-.nav-container {
-    /* padding: 0.5rem; */
-}
-
 .navigation-std {
     padding: 0.1rem;
     background-color: var(--primary-header-color);
@@ -139,7 +135,7 @@ body {
     border-radius: 1rem;
     font-weight: bold;
     padding: 0.5rem;
-    margin: 2rem 2rem;
+    margin: 0.5rem 0.5rem;
 }
 
 /****************************/
