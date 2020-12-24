@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exception Handling | Level-Up Java</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -48,44 +49,44 @@
                 <p>
                     Five keywords used for exception handling in Java are: <strong>try</strong>, <strong>catch</strong>,
                     <strong>throw</strong>, <strong>throws</strong>, and <strong>finally</strong>.
-                    <ul>
-                        <li>
-                            <p>
-                                <strong>try</strong> - this block contains the set of statements that might cause
-                                exceptions.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <strong>catch</strong> - this block will execute if an exception has occured in the
-                                <i>try</i> block and perform necesssary steps, hence preventing abnormal termination of
-                                the
-                                program.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <strong>throw</strong> - to manually throw an exception the <i>throw</i> keyword is
-                                used.
-                                Although system-generated exceptions are automatically thrown by the Java run-time
-                                system.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <strong>throws</strong> - any exception which is thrown out of a method must be
-                                specified by
-                                a <i>throws</i> clause.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <strong>finally</strong> - set of statements which must be executed after <i>try</i>
-                                block
-                                completes must be put inside the <i>finally</i> block.
-                            </p>
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>try</strong> - this block contains the set of statements that might cause
+                            exceptions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>catch</strong> - this block will execute if an exception has occured in the
+                            <i>try</i> block and perform necesssary steps, hence preventing abnormal termination of
+                            the
+                            program.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>throw</strong> - to manually throw an exception the <i>throw</i> keyword is
+                            used.
+                            Although system-generated exceptions are automatically thrown by the Java run-time
+                            system.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>throws</strong> - any exception which is thrown out of a method must be
+                            specified by
+                            a <i>throws</i> clause.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>finally</strong> - set of statements which must be executed after <i>try</i>
+                            block
+                            completes must be put inside the <i>finally</i> block.
+                        </p>
+                    </li>
+                </ul>
                 </p>
             </li>
             <li>
@@ -126,28 +127,28 @@
                     the point at which exception has occured, and teminates the program.
                 </p>
             </li>
-            
+
             <br>
             <div class="syntax-container syntax-container-center syntax-std">
 
                 <p style="font-weight: bold;">
                     Syntax:
                 </p>
-        
+
                 <xmp>
                     try {
                     // block of code to monitor for errors
                     }
-        
+
                     catch (ExceptionType1 exOb){
                     // exception handler for Exception Type 1
                     }
-        
+
                     catch (ExceptionType2 exOb){
                     // exception handler for Exception Type 2
                     }
                     // ...
-        
+
                     finally {
                     // block of code to be executed after try block ends
                     }
@@ -156,10 +157,31 @@
 
             <li>
                 <p>
-                    As soon as an exception is thrown the program control transfers out of the <strong>try</strong> block into the <strong>catch</strong> block. After the statements inside the <i>catch</i> block has executed, program control continues with the next set of statements following the entire <i>try-catch</i> module.
+                    As soon as an exception is thrown the program control transfers out of the <strong>try</strong>
+                    block into the <strong>catch</strong> block. After the statements inside the <i>catch</i> block has
+                    executed, program control continues with the next set of statements following the entire
+                    <i>try-catch</i> module.
                 </p>
             </li>
         </ul>
+    </div>
+
+    <br><br><br>
+
+    <!-- <div class="btn-container-center">
+        <button onclick="window.location.href='/';" class="btn-link btn-link-color1">
+            View code sample
+        </button>
+    </div> -->
+
+    <div class="btn-container-center">
+        <a class="btn-link btn-link-color1" href="/exception-handling.html">
+            <i class="fa fa-github" style="font-size: 20px; color: whitesmoke;">
+                <p style="display: inline; margin-left: 0.5rem;">
+                    View sample code
+                </p>
+            </i>
+        </a>
     </div>
 
     <br><br><br>

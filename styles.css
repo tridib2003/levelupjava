@@ -227,6 +227,7 @@ body {
     font-weight: normal;
     transition: 0.2s;
     margin: auto;
+    cursor: pointer;
 }
 
 .btn-index:hover {
@@ -236,6 +237,34 @@ body {
     opacity: 80%;
     transform: scale(1.5);
     transition: all 0.3s ease-in-out 0.2s;
+}
+
+.btn-link {
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: 1s;
+}
+
+.btn-link:hover {
+    background-color:#FB923C;
+    color: white;
+    opacity: 80%;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.btn-link-color1 {
+    background-color: #A1A1AA;
 }
 
 /*************************/
