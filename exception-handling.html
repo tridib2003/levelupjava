@@ -39,14 +39,14 @@
         <ul>
             <li>
                 <p>
-                    Exception is an undesired state that arises during run-time when instructions are executed.
+                    <i>Exception</i> is an undesired state that arises during run-time when instructions are executed.
                     Basically
                     a run-time error.
                 </p>
             </li>
             <li>
                 <p>
-                    Five keywords used for exception handling in java are: <strong>try</strong>, <strong>catch</strong>,
+                    Five keywords used for exception handling in Java are: <strong>try</strong>, <strong>catch</strong>,
                     <strong>throw</strong>, <strong>throws</strong>, and <strong>finally</strong>.
                     <ul>
                         <li>
@@ -108,50 +108,61 @@
             </li>
             <li>
                 <p>
-                    The <strong>Exception</strong> class is subclassed to created custom exception types to catch the exceptional conditions encountered by the program.
+                    The <strong>Exception</strong> class is subclassed to created custom exception types to catch the
+                    exceptional conditions encountered by the program.
                 </p>
             </li>
             <li>
                 <p>
-                    The <strong>RunTimeException</strong> class is a subclass of <i>Exception</i>. The exceptions of this type are automatically defined for the programs. Ex.: ArithmeticException, IndexOutOfBoundsException, NullPointerException, etc.
+                    The <strong>RunTimeException</strong> class is a subclass of <i>Exception</i>. The exceptions of
+                    this type are automatically defined for the programs. Ex.: ArithmeticException,
+                    IndexOutOfBoundsException, NullPointerException, etc.
                 </p>
-            </li><li>
+            </li>
+            <li>
                 <p>
-                    Any exception that is not caught by your program will ultimately be processed by the default handler. The default handler displays a string describing the exception, prints a stack trace from the point at which exception has occured, and teminates the program.
+                    Any exception that is not caught by your program will ultimately be processed by the default
+                    handler. The default handler displays a string describing the exception, prints a stack trace from
+                    the point at which exception has occured, and teminates the program.
+                </p>
+            </li>
+            
+            <br>
+            <div class="syntax-container syntax-container-center syntax-std">
+
+                <p style="font-weight: bold;">
+                    Syntax:
+                </p>
+        
+                <xmp>
+                    try {
+                    // block of code to monitor for errors
+                    }
+        
+                    catch (ExceptionType1 exOb){
+                    // exception handler for Exception Type 1
+                    }
+        
+                    catch (ExceptionType2 exOb){
+                    // exception handler for Exception Type 2
+                    }
+                    // ...
+        
+                    finally {
+                    // block of code to be executed after try block ends
+                    }
+                </xmp>
+            </div>
+
+            <li>
+                <p>
+                    As soon as an exception is thrown the program control transfers out of the <strong>try</strong> block into the <strong>catch</strong> block. After the statements inside the <i>catch</i> block has executed, program control continues with the next set of statements following the entire <i>try-catch</i> module.
                 </p>
             </li>
         </ul>
     </div>
 
-    <br>
-
-    <div class="syntax-container syntax-container-center syntax-std">
-
-        <p style="font-weight: bold;">
-            Syntax:
-        </p>
-
-        <xmp>
-            try {
-            // block of code to monitor for errors
-            }
-
-            catch (ExceptionType1 exOb){
-            // exception handler for Exception Type 1
-            }
-
-            catch (ExceptionType2 exOb){
-            // exception handler for Exception Type 2
-            }
-            // ...
-
-            finally {
-            // block of code to be executed after try block ends
-            }
-        </xmp>
-    </div>
-
-    <br><br>
+    <br><br><br>
 
     <footer class="navigation-std">
 
