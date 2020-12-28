@@ -1,3 +1,7 @@
+/*
+ * Author: @tridib2003
+ */
+
 /********** imports **********/
 
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
@@ -135,7 +139,7 @@ body {
 .syntax-std {
     padding: 0.5rem 1rem;
     border-left: 6px solid teal;
-    background-color: var(--secondary-surface-color);
+    background-color: #F5F5F4;
     border-radius: 2rem;
 }
 
@@ -207,6 +211,57 @@ body {
 
 /*************************/
 
+/********** tables **********/
+
+.table-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.table-container-center {
+    max-width: 800px;
+    margin: auto;
+}
+
+.table-code-links {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-code-links th {
+    color: var(--secondary-surface-color);
+    background-color: var(--primary-header-color);
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--primary-header-color);
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.table-code-links td {
+    color: var(--primary-typo-color);
+    border-bottom: dashed;
+    border-width: 1px;
+    border-color: var(--primary-header-color);
+    padding: 1rem;
+}
+
+.table-code-links td:nth-child(1) {
+    text-align: center;
+}
+
+/* .table-code-links tr:nth-child(even) {
+    background-color: #F0FDFA;
+} */
+
+/* .table-code-links tr:hover {
+    background-color:#F3F4F6;
+} */
+
+/*************************/
+
 /********** buttons **********/
 
 .btn-container-center {
@@ -240,26 +295,26 @@ body {
 }
 
 .btn-link {
-    color: white;
+    color: whitesmoke;
     border: none;
     border-radius: 2rem;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: normal;
+    /* font-size: 1rem; */
+    /* font-weight: normal; */
     margin: auto;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: inline-block;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .btn-link:hover {
-    background-color:#FB923C;
+    background-color: var(--primary-header-color);
     color: white;
     opacity: 80%;
-    transform: scale(1);
+    transform: scale(1.1);
     transition: all 0.3s ease-in-out 0.2s;
 }
 
@@ -324,7 +379,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: mediumaquamarine;
+    background: rgb(0, 175, 175);
 }
 
 /*************************/
