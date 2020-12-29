@@ -75,8 +75,7 @@
                     <li>
                         <p>
                             <strong>throws</strong> - any exception which is thrown out of a method must be
-                            specified by
-                            a <i>throws</i> clause.
+                            specified using the <i>throws</i> clause.
                         </p>
                     </li>
                     <li>
@@ -163,6 +162,52 @@
                     <i>try-catch</i> module.
                 </p>
             </li>
+
+            <li>
+                <p>
+                    If a block of code can raise multiple types of exceptions, we can specify multiple <i>catch</i>
+                    clauses to handle these different exceptional cases. As soon as an exception is thrown, each
+                    <i>catch</i> clause is inspected in order and once a match is found, statements within that
+                    <i>catch</i> block will be executed and others will be skipped and the control passes to the
+                    statement immediately after the <i>try-catch</i> block. Also, any exception subclass must come
+                    before its superclass, otherwise a subclass exception type would never be reached and resulting in
+                    compile time error.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The <strong>throw</strong> statement is used to explicitly throw an exception. The keyword
+                    <i>throw</i> is followed by an object of type <i>Throwable</i>, or a subclass of <i>Throwable</i>.
+                    We can create a <i>Throwable</i> object either by using a parameter in a <i>catch</i> clause or via
+                    creating one with the <i>new</i> operator. The execution stops immediately a <i>throw</i> statement
+                    is encountered and statements following it are not executed. Then the nearest <i>try</i> block is
+                    looked upon to find match for the exception type, if found then those statements are executed. If no
+                    such matching <i>catch</i> block is found the default exception handler stops the program execution
+                    and prints stack trace.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The <strong>throws</strong> clause is put after the parameter-list in the method's declaration, if a
+                    method can cause exceptions that it does not take care of. After the <i>throws</i> clause the list
+                    of all exceptions types that the method can throw are mentioned. If the <i>throws</i> clause is
+                    missed out, it will result in a compile-time error. All types of exceptions, except those of type
+                    <strong>Error</strong> or <strong>RuntimeException</strong>, or any of their subclasses must be
+                    declared in the <i>throws</i> statement.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Statements within the <strong>finally</strong> will be executed whether or not an exception is
+                    thrown. The <i>finally</i> block is executed just before the control returns to the caller from the
+                    <i>try-catch</i> block. Although the <i>finally</i> clause if optional, each <i>try</i> statement
+                    must have at least one <i>catch</i> or a <i>finally</i> clause.
+                </p>
+            </li>
+
         </ul>
     </div>
 
@@ -204,6 +249,82 @@
                     <div class="btn-container-center">
                         <a class="btn-link btn-link-color1"
                             href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Exception%20Handling/HandlingException2.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Handling exceptions using multiple catch statements
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Exception%20Handling/MultipleCatches.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Explicitly throw exceptions using the throw statement
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Exception%20Handling/ThrowSample.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Specify exceptions that might occur using the throws clause
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Exception%20Handling/ThrowsSample.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Using the finally block
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Exception%20Handling/FinallySample.java"
                             target="_blank">
                             <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
                                 <p style="display: inline; margin-left: 0.4rem;">
