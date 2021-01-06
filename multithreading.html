@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multithreading | Level-Up Java</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navigation-std">
+
+        <ul class="ul-remove-bullet nav-pills">
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Previous</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Next</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <h1 class="h1-basic">Multithreading</h1>
+
+    <div class="desc-container desc-container-center desc-std">
+
+        <hr>
+
+        <ul>
+            <li>
+                <p>
+                    <strong><i>Multitasking</i></strong> is the capabity to execute two or more programs (processes)
+                    concurrently. Whereas, <strong><i>multithreading</i></strong> is the capability when a single
+                    program can perform two or more tasks concurrently, thus making maximum use of the processing power
+                    available in the system.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Multitasking threads require less overhead than Multitasking processes.
+                <ul>
+                    <li>
+                        <p>
+                            <i>Processes</i> are heavy-weight tasks that require their own seperate adderess spaces,
+                            whereas <i>threads</i> are light-weight and share the same address space and
+                            cooperatively
+                            share the same heavy-weight process.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Interprocess communication is costly, whereas interthread communication is inexpensive.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Context switching from one process to another is also costly, whereas in case of
+                            threads,
+                            context switching is lower in cost.
+                        </p>
+                    </li>
+                </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    The benefit of <i>multithreading</i> is that while one thread pauses for some parts of the program to finish executing, like waiting for user input etc., the idle time created can be utilized elsewhere, thus all other threads continue to execute. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    A <i>thread</i> lifecycle has several states. Once a thread is created and gets CPU time it can be <i>ready to run</i>. A thread can be <i>running</i>. A running thread can be <i>suspended</i>, which temporarily stops executing. A suspended thread can be <i>resumed</i>, from where it stopped. A thread can also be <i>blocked</i>, when its not getting a resource. Anytime a thread can be <i>terminated</i> and cannot resume execution thereafter.
+                </p>
+                <p title="Throwable class hierarchy" style="text-align:center">
+                    <img src="assets/images/LUJ-MT-01.png" alt="Throwable class hierarchy" width=500
+                        class="img-responsive" />
+                </p>
+            </li>
+            <li>
+                <p>
+                    Threads are assigned a <i>priority</i>, basically an integer value that determines when to switch from one running thread to the next. This is known as <i>context switch</i>. A thread can voluntarily give up control or can be preempted by a higher-priority thread.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If a thread wants to modify some data where another thread is in the middle of reading it, such situation needs to be prevented. In Java, synchronization support is built into the language. When a thread is inside a synchronized method, no other thead can call any other synchronized method on the same object.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="table-container table-container-center">
+
+        <table class="table-code-links">
+
+            <!-- <tr>
+                <th>Title</th>
+                <th>Desc</th>
+            </tr> -->
+
+            <tr>
+                <td>
+                    Handling exceptions using try-catch mechanism
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Exception%20Handling/HandlingException1.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <br><br><br>
+
+    <footer class="navigation-std">
+
+        <ul class="ul-remove-bullet nav-pills">
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Previous</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Next</a>
+            </li>
+
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
