@@ -1,0 +1,214 @@
+<!--
+    ~ Author: @tridib2003
+    ~ Repository: https://github.com/tridib2003/levelupjava
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & Objects | Level-Up Java</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navigation-std">
+
+        <ul class="ul-remove-bullet nav-pills">
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Previous</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Next</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <h1 class="h1-basic">Class & Objects</h1>
+
+    <div class="desc-container desc-container-center desc-std">
+
+        <hr>
+
+        <ul>
+            <li>
+                <p>
+                    A <strong>class</strong> defines a new datatype, which can be used to create <strong>objects</strong> of that class type.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    A class is a <strong>template</strong> for an object, and an object is an <strong>instance</strong> of a class. A class is a <strong>logical construct</strong> whereas an object has a <strong>physical reality</strong> (i.e. objects occupy space in memory).
+                </p>
+            </li>
+
+            <div class="syntax-container syntax-container-center syntax-std">
+
+                <p style="font-weight: bold;">
+                    General syntax:
+                </p>
+
+                <xmp>
+                    class classname {
+
+                        datatype instance-variable1;
+                        datatype instance-variable2;
+                    
+                        returntype methodname1(datatype parameter1, datatype parameter2) {
+                            // method body
+                        }
+                    
+                        returntype methodname2(datatype parameter1, datatype parameter2) {
+                            // method body
+                        }
+
+                    }
+                </xmp>
+            </div>
+
+            <li>
+                <p>
+                    A class contains data (<strong>variables</strong>) and code (<strong>methods</strong>) that sets the behaviour of the data.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The variables defined within a class are called <strong>instance variables</strong>. The instance variables and <strong>methods</strong> collectively form the members of a class. That is, a class creates a logical framework that defines the relationship between its members.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Each object of a class contains its own copy of the instance variables and exist independently, which means the data for one object is separate from the data of another object.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    To access an instance variable specific to an object, we use the <strong>dot (.) operator</strong>. It links the name of the object with the name of an instance variable. While accessing an instance variable by code that is not a part of the class in which that instance variable is defined, we need to access it through an object, by using the dot (.) operator. Whereas, when an instance variable is accessed by code that is part of the same class as the instance variable, we can access it directly.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The Java compiler automatically puts each class into its <strong>.class</strong> file.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    In Java all class objects must be dynamically allocated. While declaring an object we first declare a variable of the class type. Secondly, we need to give physical existence to that object using the <strong>new</strong> operator. The <strong>new</strong> operator dynamically (runtime) allocates memory for an object and returns a reference to it. This memory reference is the address in memory of the object allocated by <strong>new</strong>.
+                </p>
+            </li>
+            
+            <div class="syntax-container syntax-container-center syntax-std">
+
+                <p style="font-weight: bold;">
+                    General syntax:
+                </p>
+
+                <xmp>
+                    classname objectname = new classname();
+                </xmp>
+            </div>
+
+            <li>
+                <p>
+                    The classname followed by parenthesis specifies the constructor for the class. The constructor defines what occurs when an object of a class is created. Most classes explicitly define their own constructors within their class definition. In case, no constructors are specified explicitly, Java will automatically supplies a <strong>default constructor</strong>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong>Garbage collection</strong> is a technique that handles deallocation of memory space automatically during the execution of your program. When no reference to an object exists, Java will assume that object is no longer needed, and the memory  occupied by the object can be reclaimed. Hence there is no need to explicitly destroy objects in Java.
+                </p>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="table-container table-container-center">
+
+        <table class="table-code-links">
+            <tr>
+                <td>
+                    Demonstrating objects
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Class-%26-Objects/StudentDemo.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Creating objects and using methods
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Class-%26-Objects/SumDemo.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br><br><br>
+
+    <footer class="navigation-std">
+
+        <ul class="ul-remove-bullet nav-pills">
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Previous</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="ul-inline-item nav-pills-decor">
+                <a class="link" href="/">Next</a>
+            </li>
+
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>
