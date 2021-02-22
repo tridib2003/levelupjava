@@ -1,5 +1,6 @@
 /*
  * Author: @tridib2003
+ * Repository: https://github.com/tridib2003/levelupjava
  */
 
 /********** imports **********/
@@ -265,6 +266,7 @@ body {
 /********** buttons **********/
 
 .btn-container-center {
+    padding: 1rem;
     text-align: center;
 }
 
