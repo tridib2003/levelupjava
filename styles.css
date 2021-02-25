@@ -384,3 +384,13 @@ body {
 }
 
 /*************************/
+
+/********** section end **********/
+
+.end-section {
+    text-align: center; 
+    font-size: xx-large; 
+    color: slategray;
+}
+
+/*************************/
