@@ -88,7 +88,7 @@
         <table class="table-code-links">
             <tr>
                 <td>
-                    Demonstrate method overloading
+                    Demonstrate <strong>Method Overloading</strong>
                 </td>
                 <td>
                     <div class="btn-container-center">
@@ -119,7 +119,7 @@
         <ul>
             <li>
                 <p>
-                    <strong>Constructor</strong> Constructor can also be overloaded in the same way as methods.
+                    <strong>Constructor</strong> can also be overloaded in the same way as methods.
                 </p>
             </li>
 
@@ -146,12 +146,122 @@
         <table class="table-code-links">
             <tr>
                 <td>
-                    Demonstrate constructor overloading
+                    Demonstrate <strong>Constructor Overloading</strong>
                 </td>
                 <td>
                     <div class="btn-container-center">
                         <a class="btn-link btn-link-color1"
                             href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Overloading-%26-Overriding/ConstructorOverloadingDemo.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <h3 class="end-section">. . .</h3>
+
+    <h1 class="h1-basic">Method Overriding</h1>
+
+    <div class="desc-container desc-container-center desc-std">
+
+        <hr>
+
+        <ul>
+            <li>
+                <p>
+                    A <strong>method</strong> in a subclass is said to <strong>override</strong> a method in its
+                    superclass, if the name and type signature of both the methods are identical.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    When an overridden method is called from within its subclass, the version of the method present in
+                    the subclass will be executed. Thus the method defined by the superclass will be hidden.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    A general class defines a method common to all of its subclasses, while the subclasses inherit the
+                    general properties from their superclass as well as add their own specialized attributes and
+                    methods, thus achieving the <i>one interface, multiple methods</i> aspect of polymorphism. As we
+                    move down the hierarchy from superclass to subclass we are basically moving from lesser to more
+                    specialized classes.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong>Dynamic Method Dispatch</strong> is the way Java implements run time polymorphism. When a
+                    method is overridden, which method to call is resolved during run time, rather than compile time. As
+                    a super class reference variable can refer to a sub class object. It is the type of object being
+                    referred to that determines which version of the overridden method will be executed.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+
+    <br><br><br>
+
+    <div class="table-container table-container-center">
+
+        <table class="table-code-links">
+            <tr>
+                <td>
+                    Demonstrating <strong>Method Overriding</strong>
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Overloading-%26-Overriding/MethodOverridingDemo.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Accessing overridden superclass method using <strong>super</strong>
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Overloading-%26-Overriding/MethodOverridingDemo2.java"
+                            target="_blank">
+                            <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
+                                <p style="display: inline; margin-left: 0.4rem;">
+                                    View code
+                                </p>
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Demonstrating <strong>Dynamic Method Dispatch</strong>
+                </td>
+                <td>
+                    <div class="btn-container-center">
+                        <a class="btn-link btn-link-color1"
+                            href="https://github.com/tridib2003/levelupjava-wiki/blob/main/Overloading-%26-Overriding/DyamicMethodDispatch.java"
                             target="_blank">
                             <i class="fa fa-github" style="font-size: 18px; color: whitesmoke;">
                                 <p style="display: inline; margin-left: 0.4rem;">
